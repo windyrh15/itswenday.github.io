@@ -37,8 +37,8 @@
       .about-img {
         background-image: url("img/blob-haikei-2.png");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
+        background-size: 1000px 700px;
+        background-position: top;
       }
 
       .active {
@@ -60,6 +60,13 @@
 
       .navbar-menu a:hover::after {
         width: 100%;
+      }
+
+      /* Media query ---------------- */
+      @media only screen and (max-width: 1280px) {
+        .about-img {
+          background-size: 800px 500px;
+        }
       }
     </style>
   </head>
@@ -138,7 +145,7 @@
             Skills
           </h1>
           <div
-            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8"
+            class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
           >
             <div
               class="card flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
@@ -172,7 +179,7 @@
                 alt="HTML"
                 class="w-12 h-12 mb-2"
               />
-              <h3 class="text-lg font-semibold">Codeigniter 4</h3>
+              <h3 class="text-lg font-semibold">Codeigniter</h3>
             </div>
             <div
               class="card flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
@@ -203,7 +210,15 @@
                 class="w-full h-40 object-cover mb-4 rounded-lg"
               />
               <h3 class="text-xl font-semibold mb-2">Project 1</h3>
-              <p class="text-sm text-gray-700 mb-4">Description of Project 1</p>
+              <p class="text-sm text-gray-700 mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, dolores?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+                quis perferendis placeat deserunt doloremque commodi quibusdam.
+                Reiciendis sapiente iure nulla!
+              </p>
               <a href="#" class="text-blue-500 hover:underline">Read More</a>
             </div>
             <div
@@ -241,7 +256,7 @@
           class="contact-icon flex justify-center items-center gap-4 box-border"
         >
           <div
-            class="w-56 p-5 rounded-xl bg-white drop-shadow-xl flex flex-col justify-center items-center gap-2"
+            class="w- p-5 rounded-xl bg-white drop-shadow-xl flex flex-col justify-center items-center gap-2"
           >
             <i data-feather="mail"></i>
             <h4>windyrdoko@gmail.com</h4>
@@ -265,8 +280,9 @@
       class="footer bg-gradient-to-r from-gray-800 to-gray-900 text-white py-8"
     >
       <div
-        class="container mx-auto flex flex-col lg:flex-row justify-between items-center"
+        class="flex flex-col lg:flex-row justify-between items-center mr-20 ml-20"
       >
+        <h1 class="text-xl font-semibold">ItsWenday</h1>
         <div class="copyright mb-4 lg:mb-0">
           <p class="text-sm">© 2024 WindyRH. All rights reserved.</p>
         </div>
@@ -291,10 +307,6 @@
             class="text-white hover:text-gray-400 transition-all duration-300"
             ><i data-feather="linkedin"></i
           ></a>
-        </div>
-        <div class="contact-info text-sm">
-          <p class="mb-1">Contact me: windyrdoko@gmail.com</p>
-          <p>Phone: +62 895-320-825-269</p>
         </div>
       </div>
     </footer>
