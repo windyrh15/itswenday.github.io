@@ -6,7 +6,7 @@ document
   .querySelector("#hamburger-menu")
   .addEventListener("click", function () {
     navbarMenu.classList.toggle("left-full");
-    navbarMenu.classList.toggle("left-3/4");
+    navbarMenu.classList.toggle("left-72");
     navbarMenu.classList.toggle("active");
     navbarMenu.classList.toggle("hidden-sidebar");
   });
@@ -18,6 +18,6 @@ document.addEventListener("click", function (e) {
   if (!hamburger.contains(e.target) && !navbarMenu.contains(e.target)) {
     navbarMenu.classList.remove("active");
     navbarMenu.classList.remove("hidden-sidebar");
-    navbarMenu.classList.replace("left-3/4", "left-full");
+    navbarMenu.classList.replace("left-72", "left-full");
   }
 });
