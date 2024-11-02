@@ -24,51 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: Poppins;
-        background-image: url("img/about-bg.png");
-      }
-
-      .navbar-menu {
-        transition: left 0.3s ease; /* Menambahkan transisi pada perubahan posisi */
-      }
-
-      .about-img {
-        background-image: url("img/blob-haikei-2.png");
-        background-repeat: no-repeat;
-        background-size: 1000px 700px;
-        background-position: top;
-      }
-
-      .active {
-        left: 25%; /* Memindahkan sidebar ke dalam layar */
-      }
-
-      .hidden-sidebar {
-        left: -100%; /* Memindahkan sidebar ke luar layar */
-      }
-
-      .navbar-menu a::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 2px;
-        background-color: black;
-        transition: width 0.3s;
-      }
-
-      .navbar-menu a:hover::after {
-        width: 100%;
-      }
-
-      /* Media query ---------------- */
-      @media only screen and (max-width: 1280px) {
-        .about-img {
-          background-size: 800px 500px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body class="bg-zinc-50">
     <nav class="navbar relative z-50">
@@ -77,7 +33,7 @@
       >
         <a href="#" class="text-lg ml-20 font-bold">ItsWenday</a>
         <div
-          class="navbar-menu flex flex-col absolute flex-col top-16 left-72 pt-5 bg-white w-full h-screen lg:flex-row lg:top-0 lg:bg-transparent lg:left-2/3 lg:h-16"
+          class="navbar-menu flex flex-col absolute flex-col top-16 left-[1000px] pt-5 bg-white w-full h-screen lg:flex-row lg:top-0 lg:bg-transparent lg:left-2/3 lg:h-16"
         >
           <a href="#" class="pl-5">Home</a>
           <a href="#about" class="pl-5">About</a>
@@ -322,6 +278,121 @@
                 target="_blank"
                 >Preview</a
               >
+            </div>
+            <div
+              class="project-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
+            >
+              <img
+                src="img/kopiPuchoo.PNG"
+                alt="Project 4"
+                class="w-full h-40 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">Kopi Puchoo</h3>
+              <p class="text-sm text-gray-700 mb-4">
+                ini dibuat dengan mengikuti ngobar atau ngoding bareng dengan
+                sandika galih kaling mungkin harus coba cek youtubenya
+              </p>
+              <div class="flex justify-between">
+                <a
+                  href="https://github.com/windyrh15/kopiPu.github.io"
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://windyrh15.github.io/kopiPu.github.io/"
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+            </div>
+            <div
+              class="project-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
+            >
+              <img
+                src="img/scrollAnimation.PNG"
+                alt="Project 4"
+                class="w-full h-40 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">Scroll Animation</h3>
+              <p class="text-sm text-gray-700 mb-4">
+                ini dibuat dengan beberapa pembelajaran dari youtube sih
+                sebenernya dan ini sudah agak lama akupun tidak ingat aku punya
+                ini, maaf tidak bisa memberikan sumbernya tapi intinya ini tidak
+                murni kubuat sendiri, di sini aku belajar bagaimana cara membuat
+                scroll animation ini sangat menarik dan seru untuk di pelajari
+              </p>
+              <div class="flex justify-between">
+                <a
+                  href="https://github.com/windyrh15/scrollAnim.github.io"
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://windyrh15.github.io/scrollAnim.github.io/"
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+            </div>
+            <div
+              class="project-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
+            >
+              <img
+                src="img/Some random learning.PNG"
+                alt="Project 4"
+                class="w-full h-40 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">Random project 1</h3>
+              <p class="text-sm text-gray-700 mb-4">
+                aku sebenernya ga tau juga ini ku buat untuk apa tapi yang pasti
+                iseng aja
+              </p>
+              <div class="flex justify-between">
+                <a
+                  href="https://github.com/windyrh15/justRandom2.github.io"
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://windyrh15.github.io/justRandom2.github.io/"
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+            </div>
+            <div
+              class="project-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
+            >
+              <img
+                src="img/Some random learning 2.PNG"
+                alt="Project 4"
+                class="w-full h-40 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">Random Project 2</h3>
+              <p class="text-sm text-gray-700 mb-4">
+                aku sepertinya ingat yang ini tapi aku lupa sumbernya jadi ini
+                adalah hasil saat aku pertama kali memahami flexbox
+              </p>
+              <div class="flex justify-between">
+                <a
+                  href="https://github.com/windyrh15/justRandom1.github.io"
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://windyrh15.github.io/justRandom1.github.io/"
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
             </div>
           </div>
         </div>
